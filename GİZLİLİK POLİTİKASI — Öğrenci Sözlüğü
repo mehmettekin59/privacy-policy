@@ -1,0 +1,206 @@
+📘 GİZLİLİK POLİTİKASI — Öğrenci Sözlüğü
+
+Son Güncelleme Tarihi: 6 Ekim 2025
+Geçerlilik Tarihi: 6 Ekim 2025
+
+Öğrenci Sözlüğü (“Uygulama”) uygulamasını kullandığınız için teşekkür ederiz.
+Bu gizlilik politikası, uygulamanın hangi verileri topladığını, nasıl kullandığını ve koruduğunu açıklar.
+
+1. Toplanan Veriler
+1.1. Cihazda Saklanan Veriler
+
+Uygulama aşağıdaki verileri yalnızca cihazınızda (Room Database) saklar:
+
+Aradığınız kelimeler (İngilizce ve Türkçe karşılıkları)
+
+Kelime tanımları ve örnek cümleler
+
+Eş anlamlı ve zıt anlamlı kelimeler
+
+Favorilere eklediğiniz kelimeler
+
+Kaydettiğiniz kelimeler
+
+Arama zaman damgaları
+
+Bu veriler:
+
+Sunucuya gönderilmez,
+
+Başka kullanıcılarla paylaşılmaz,
+
+Uygulamayı sildiğinizde tamamen silinir.
+
+1.2. Üçüncü Taraf Servislere Gönderilen Veriler
+
+Google Firebase Analytics & Crashlytics
+
+Anonim kullanım istatistikleri (ör. arama sayısı, ekran süreleri, favori ekleme oranı)
+
+Uygulama performans verileri (çökme, yüklenme süresi)
+
+Cihaz modeli, işletim sistemi ve ülke bilgisi
+
+Bu veriler anonimdir, kişisel kimlik içermez.
+Firebase Gizlilik Politikası
+
+Google Gemini AI
+
+Aradığınız kelimeler (yalnızca çeviri amacıyla)
+
+Dil tespiti (İngilizce/Türkçe)
+
+Bu veriler yalnızca sorgu anında işlenir, depolanmaz veya kullanıcıyla ilişkilendirilmez.
+
+Free Dictionary API (dictionaryapi.dev)
+
+Aranan İngilizce kelimeler (telaffuz, eş/zıt anlamlılar için)
+
+dictionaryapi.dev Gizlilik Politikası
+
+1.3. Yerel Ses İşleme (ExoPlayer & Text-to-Speech)
+
+Telaffuz sesleri cihaz üzerinde işlenir.
+
+Herhangi bir veri paylaşımı veya kaydı yapılmaz.
+
+1.4. Toplanmayan Veriler
+
+Uygulama aşağıdaki bilgileri toplamaz veya paylaşmaz:
+
+Ad, soyad, e-posta adresi
+
+Hassas konum bilgisi
+
+Kamera, mikrofon, kişiler, telefon rehberi
+
+Ödeme veya kimlik bilgileri
+
+2. Verilerin Kullanım Amaçları
+
+Uygulama İşlevselliği İçin:
+
+Kelime çevirileri sunmak (Gemini AI)
+
+Telaffuz ve tanım sağlamak (Dictionary API)
+
+Offline çalışmayı sağlamak (Room Database)
+
+Favori listesi oluşturmak
+
+Uygulama İyileştirmesi İçin:
+
+Performans analizi (Firebase Analytics)
+
+Hata takibi (Crashlytics)
+
+Kullanıcı deneyimini geliştirme (ör. arama süreleri, ekran etkileşimleri)
+
+3. Üçüncü Taraf Servisler
+Servis	Amaç	Veri Türü	Gizlilik Politikası
+Google Firebase	Analitik & Crash raporları	Anonim kullanım verileri	firebase.google.com/support/privacy
+
+Google Gemini AI	Çeviri ve dil tespiti	Sadece aranan kelime	Google Cloud AI altyapısı
+Free Dictionary API	Telaffuz ve anlam bilgisi	İngilizce kelimeler	dictionaryapi.dev
+4. Veri Güvenliği
+4.1. İletişim Güvenliği
+
+Tüm ağ trafiği HTTPS ile şifrelenir.
+network_security_config.xml:
+
+<base-config cleartextTrafficPermitted="false" />
+
+4.2. Yerel Veri Güvenliği
+
+Room veritabanı Android’in sandbox alanında tutulur.
+
+Diğer uygulamalar erişemez.
+
+Veriler cihaz şifresiyle dolaylı olarak korunur.
+
+4.3. Kod Güvenliği
+isMinifyEnabled = true
+isShrinkResources = true
+
+
+Uygulama kodu ProGuard/R8 ile karartılır.
+
+Reverse engineering zorlaştırılmıştır.
+
+4.4. Yedekleme Güvenliği
+
+Android otomatik yedekleme açıktır:
+
+android:allowBackup="true"
+android:fullBackupContent="@xml/backup_rules"
+
+
+Yedeklenen veriler Google Drive üzerinde şifrelenmiş olarak saklanır.
+
+5. Çocukların Gizliliği
+
+Uygulama 13 yaş ve üzeri kullanıcılara yöneliktir.
+
+COPPA (Children’s Online Privacy Protection Act) uyumludur.
+
+13 yaş altı çocuklardan bilerek veri toplanmaz.
+
+Bir çocuğun veri paylaştığını düşünüyorsanız, lütfen bizimle iletişime geçin.
+
+6. Veri Saklama Süresi
+Veri Türü	Saklama Yeri	Saklama Süresi
+Kayıtlı kelimeler	Cihaz (Room DB)	Kullanıcı silene kadar
+Analytics verileri	Firebase	14 ay (otomatik)
+API sorguları	Geçici	İşlem tamamlanınca silinir
+Yedekleme verileri	Google Drive	Kullanıcı manuel silene kadar
+7. Kullanıcı Hakları
+
+Verilere Erişim:
+Tüm veriler cihazınızda saklandığı için doğrudan erişebilirsiniz.
+Android Ayarlar → Uygulamalar → Öğrenci Sözlüğü → Depolama
+
+Veri Silme:
+Uygulama içinden veya cihaz ayarlarından tüm kelimeleri silebilirsiniz.
+Uygulamayı kaldırmak da tüm verileri tamamen siler.
+
+Veri Taşınabilirliği:
+Veriler Android yedekleme sistemiyle Google Drive’a şifreli olarak taşınabilir.
+
+8. Gizlilik Politikası Güncellemeleri
+
+Bu gizlilik politikası gerektiğinde güncellenebilir.
+
+Güncellemeler bu sayfada yayımlanır.
+
+Önemli değişikliklerde uygulama içi bilgilendirme yapılır.
+
+En güncel tarih yukarıda “Son Güncelleme Tarihi” olarak belirtilir.
+
+9. İletişim
+
+Sorularınız, talepleriniz veya veri gizliliği konularında bizimle iletişime geçebilirsiniz:
+
+E-posta:mehmettekin59@gmail.com
+
+Geliştirici: Mehmet Tekin
+
+10. Yasal Uyumluluk
+KVKK (Türkiye)
+
+Toplanan veriler anonimdir; açık rıza gerekmez.
+
+Veri sorumlusu: Mehmet Tekin – mehmet@example.com
+
+GDPR (AB)
+
+Yasal dayanak: Meşru menfaat (analitik ve performans iyileştirme).
+
+Veri işleyici: Google LLC.
+
+AB kullanıcıları için iletişim: mehmet@example.com
+
+CCPA (Kaliforniya)
+
+Kişisel veri satışı yapılmaz.
+
+Toplanan veriler anonimdir, kullanıcıyı tanımlamaz.
